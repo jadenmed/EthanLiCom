@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EthanLiCom</title>
-<meta name="description" content="I built a 6-figure peptide brand in 6 months. Get the exact suppliers, systems, and strategy that took AscendBioLabs from zero to $2M+.">
+<title>Schedule a Call | EthanLiCom</title>
+<meta name="description" content="Book a free 30-minute call with Ethan Li to see if the Blueprint, Accelerator, or Operator Track is the right fit for you.">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="I Built a 6-Figure Peptide Brand in 6 Months | EthanLiCom">
-<meta property="og:description" content="Skip the trial and error. Get the exact suppliers, systems, and strategy that took AscendBioLabs from zero to $2M+ in 6 months.">
+<meta property="og:title" content="Schedule a Call with Ethan Li | EthanLiCom">
+<meta property="og:description" content="Book a free 30-minute call with Ethan Li to see if this is the right fit before you commit to anything.">
 <meta property="og:image" content="https://ethanlicom.com/assets/og-image.png">
-<meta property="og:url" content="https://ethanlicom.com">
+<meta property="og:url" content="https://ethanlicom.com/schedule.html">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="I Built a 6-Figure Peptide Brand in 6 Months | EthanLiCom">
-<meta name="twitter:description" content="Skip the trial and error. Get the exact suppliers, systems, and strategy that took AscendBioLabs from zero to $2M+ in 6 months.">
+<meta name="twitter:title" content="Schedule a Call with Ethan Li | EthanLiCom">
+<meta name="twitter:description" content="Book a free 30-minute call with Ethan Li to see if this is the right fit before you commit to anything.">
 <meta name="twitter:image" content="https://ethanlicom.com/assets/og-image.png">
 
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -69,7 +69,7 @@
     padding: 22px 60px;
   }
 
-  #problem, #blueprint, #curriculum, #about, #pricing, #faq, #final-cta {
+  #problem, #blueprint, #curriculum, #about, #pricing, #faq, #final-cta, #book {
     scroll-margin-top: 90px;
   }
 
@@ -948,6 +948,119 @@
     }
   }
 
+  /* BOOKING PAGE */
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 18px;
+  }
+
+  .booking-hero {
+    padding: 70px 0 100px;
+  }
+
+  .booking-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 80px;
+  }
+
+  .booking-header h1 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+  }
+
+  .booking-header h1 .accent {
+    color: var(--blue);
+  }
+
+  .booking-header p {
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  .expect-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .expect-card {
+    background: #FAFAFA;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 36px 32px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .expect-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px);
+  }
+
+  .expect-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--blue);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .expect-icon i {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .expect-card h4 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+
+  .expect-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  /* CALENDAR */
+  .booking-calendar {
+    padding: 0 0 120px;
+  }
+
+  .booking-embed {
+    height: 780px;
+    max-width: 980px;
+    margin: 0 auto 70px;
+  }
+
+  .booking-embed iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* BOOKING FAQ */
+  .booking-faq {
+    padding: 0 0 120px;
+  }
+
   /* FOOTER */
   .site-footer {
     border-top: 1px solid var(--border);
@@ -1087,6 +1200,13 @@
     .faq { padding: 0 0 90px; }
     .footer-top { grid-template-columns: 1fr 1fr; gap: 40px 24px; }
     .footer-brand { grid-column: 1 / -1; }
+    .booking-hero { padding: 50px 0 80px; }
+    .booking-header { margin-bottom: 0; }
+    .booking-header h1 { font-size: 38px; }
+    .expect-grid { grid-template-columns: 1fr; gap: 20px; }
+    .booking-calendar { padding: 0 0 90px; }
+    .booking-embed { height: 700px; margin-bottom: 50px; }
+    .booking-faq { padding: 0 0 90px; }
   }
 
   @media (max-width: 560px) {
@@ -1135,6 +1255,10 @@
     .footer-brand { grid-column: auto; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
     .footer-bottom-links { gap: 20px; flex-wrap: wrap; }
+    .booking-header h1 { font-size: 28px; }
+    .booking-header p { font-size: 16px; }
+    .expect-card { padding: 28px 24px; }
+    .booking-embed { height: 650px; margin-bottom: 40px; }
   }
 </style>
 </head>
@@ -1149,13 +1273,13 @@
       </div>
       <div class="nav-right">
         <div class="nav-links">
-          <a href="#top">Home</a>
-          <a href="#problem">Problem</a>
-          <a href="#blueprint">Blueprint</a>
-          <a href="#curriculum">Curriculum</a>
-          <a href="#about">About</a>
+          <a href="index.html#top">Home</a>
+          <a href="index.html#problem">Problem</a>
+          <a href="index.html#blueprint">Blueprint</a>
+          <a href="index.html#curriculum">Curriculum</a>
+          <a href="index.html#about">About</a>
         </div>
-        <a href="schedule.html" class="cta-btn">Schedule a Call</a>
+        <a href="#book" class="cta-btn">Schedule a Call</a>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -1164,164 +1288,52 @@
       </button>
     </nav>
     <div class="mobile-nav" id="mobileNav">
-      <a href="#top">Home</a>
-      <a href="#problem">Problem</a>
-      <a href="#blueprint">Blueprint</a>
-      <a href="#curriculum">Curriculum</a>
-      <a href="#about">About</a>
-      <a href="schedule.html" class="cta-btn">Schedule a Call</a>
+      <a href="index.html#top">Home</a>
+      <a href="index.html#problem">Problem</a>
+      <a href="index.html#blueprint">Blueprint</a>
+      <a href="index.html#curriculum">Curriculum</a>
+      <a href="index.html#about">About</a>
+      <a href="#book" class="cta-btn">Schedule a Call</a>
     </div>
   </div>
 </header>
 
 <div class="container">
 
-  <section class="hero" id="top">
-    <div class="hero-grid">
-      <div class="hero-copy reveal">
-        <h1>I Built a <span class="accent">6-Figure Peptide Brand</span> in 6 Months. Here's the Exact Blueprint.</h1>
-        <p>Skip the trial and error, get the exact suppliers, systems, and strategy that took my company from zero to six figures.</p>
-        <div class="hero-buttons">
-          <a href="schedule.html" class="btn-primary">Schedule a Call</a>
-          <a href="#blueprint" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <img src="assets/phone-hero.png" alt="Dashboard analytics on phones">
-      </div>
-    </div>
-
-    <div class="stats reveal-stagger">
-      <div>
-        <div class="stat-number" data-target="2" data-prefix="$" data-suffix="M+">$0M+</div>
-        <div class="stat-label">Revenue Generated</div>
-      </div>
-      <div>
-        <div class="stat-number" data-target="6" data-suffix=" Months">0 Months</div>
-        <div class="stat-label">To Six Figures</div>
-      </div>
-      <div>
-        <div class="stat-number" data-target="5" data-suffix="K+">0K+</div>
-        <div class="stat-label">Orders fulfilled</div>
-      </div>
-      <div>
-        <div class="stat-number" data-target="38" data-suffix="+">0+</div>
-        <div class="stat-label">Products Launched</div>
-      </div>
+  <section class="booking-hero">
+    <div class="booking-header reveal">
+      <h1>Ready to <span class="accent">Learn More?</span></h1>
+      <p>Book a free 30-minute call with Ethan Li. No pitch, just an honest look at whether this is the right fit for where you're at.</p>
+      <a href="#book" class="btn-primary">Schedule a Call</a>
     </div>
   </section>
 
-  <section class="problems" id="problem">
-    <div class="problems-header reveal">
-      <h2>Most People Trying to Break Into Peptides Never Make It Past<br class="force-break"><span class="accent">Month One</span>.</h2>
-      <p>Not because the market isn't there. Because nobody hands you the playbook.</p>
+  <section class="booking-calendar" id="book">
+    <div class="booking-embed reveal">
+      <iframe
+        src="https://cal.com/ethan-li-zkg2nh/30min?overlayCalendar=true"
+        width="100%"
+        frameborder="0"
+        loading="lazy"
+        title="Schedule a call with Ethan Li">
+      </iframe>
     </div>
 
-    <div class="problems-grid reveal-stagger">
-      <div class="problem-card">
-        <div class="problem-icon"><i class="ph ph-truck"></i></div>
-        <h3>No Reliable Suppliers</h3>
-        <p>You spend weeks messaging vendors, hoping one isn't a scam, with no idea what 'good' actually looks like.</p>
+    <div class="expect-grid reveal-stagger">
+      <div class="expect-card">
+        <div class="expect-icon"><i class="ph ph-target"></i></div>
+        <h4>Personalized Strategy</h4>
+        <p>We'll discuss your goals, where you're starting from, and whether the Blueprint, Accelerator, or Operator Track fits best.</p>
       </div>
-      <div class="problem-card">
-        <div class="problem-icon"><i class="ph ph-shield-check"></i></div>
-        <h3>No System For Trust</h3>
-        <p>Without COAs, branding, or compliance basics, customers won't buy twice and your brand looks like every other reseller.</p>
+      <div class="expect-card">
+        <div class="expect-icon"><i class="ph ph-lightbulb"></i></div>
+        <h4>Expert Insights</h4>
+        <p>Get honest, actionable answers on suppliers, compliance, and what actually moves the needle in this space.</p>
       </div>
-      <div class="problem-card">
-        <div class="problem-icon"><i class="ph ph-chart-line-up"></i></div>
-        <h3>No Path to Scale</h3>
-        <p>Most people get one or two sales then stall. They don't know how to turn a storefront into recurring revenue.</p>
-      </div>
-    </div>
-
-    <div class="problems-footer reveal">
-      <strong>AscendBioLabs</strong> went from zero to $2M+ in 6 months by solving these problems first, before worrying about marketing.
-    </div>
-  </section>
-
-  <section class="blueprint" id="blueprint">
-    <div class="blueprint-grid">
-      <div class="blueprint-copy reveal">
-        <h2>Introducing the <span class="accent">Ethan Li Blueprint</span></h2>
-        <p>The exact system, suppliers, and sequence Ethan Li used to take AscendBioLabs from zero to $2M+ in 6 months, broken down step by step.</p>
-        <p>This isn't theory. It's the real playbook, the same suppliers, branding decisions, compliance setup, and sales systems that built AscendBioLabs from the ground up. No guesswork, no trial and error, just the proven path laid out so you can follow it.</p>
-      </div>
-      <div class="blueprint-list reveal">
-        <div class="blueprint-list-item">
-          <i class="ph ph-check"></i>
-          <span>Proven Suppliers</span>
-        </div>
-        <div class="blueprint-list-item">
-          <i class="ph ph-check"></i>
-          <span>COA and compliance setup</span>
-        </div>
-        <div class="blueprint-list-item">
-          <i class="ph ph-check"></i>
-          <span>A brand customers trust</span>
-        </div>
-        <div class="blueprint-list-item">
-          <i class="ph ph-check"></i>
-          <span>A repeatable scaling system</span>
-        </div>
-        <div class="blueprint-list-item">
-          <i class="ph ph-check"></i>
-          <span>Marketing & sales systems that work</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="curriculum">
-    <div class="features-header reveal">
-      <h2>Everything you need to build a<br class="force-break">6+ figure Peptide Brand</h2>
-      <p>A complete, step by step breakdown, no skipped steps, no gatekept info.</p>
-    </div>
-
-    <div class="features-grid reveal-stagger">
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-package"></i></div>
-        <h3>Finding & Vetting Suppliers</h3>
-        <p>How to identify legitimate manufacturers, what red flags to avoid, and the exact criteria Ethan used to source AscendBioLabs' compounds.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-palette"></i></div>
-        <h3>Branding That Builds Trust</h3>
-        <p>Positioning, naming, packaging, and visual identity decisions that separate a serious brand from "just another reseller."</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-seal-check"></i></div>
-        <h3>COA & Compliance Setup</h3>
-        <p>Third-party testing, batch documentation, and the legal language that protects your brand while building credibility.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-storefront"></i></div>
-        <h3>Building Your Storefront</h3>
-        <p>Setting up a store that converts, from product pages to checkout, using the same structure AscendBioLabs runs on.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-credit-card"></i></div>
-        <h3>Payment Processing Solutions</h3>
-        <p>How to handle payments in a high-risk category without losing your processor, including alternatives like Coinbase Commerce.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="ph ph-rocket-launch"></i></div>
-        <h3>Marketing & Scaling to 6 figures</h3>
-        <p>The exact acquisition, retention, and content systems Ethan used to scale AscendBioLabs from launch to seven figures.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="founder" id="about">
-    <div class="founder-grid">
-      <div class="founder-copy reveal">
-        <h2>Meet <span class="accent">Ethan Li</span></h2>
-        <p>Ethan Li founded <span class="accent">AscendBioLabs</span> with no industry connections, no outside funding, and no playbook to follow. In just <span class="accent">6 months</span>, he built it into a <span class="accent">$2M+ research peptide brand</span>, third party tested, COA verified, and trusted by thousands of researchers across the US.</p>
-        <p>Now he's breaking down the exact systems, supplier relationships, and decisions that took AscendBioLabs from <span class="accent">zero to seven figures</span>, so you don't have to figure it out the hard way.</p>
-        <a href="schedule.html" class="btn-primary">Schedule a Call</a>
-      </div>
-      <div class="founder-image reveal">
-        <img src="assets/ethanli.png" alt="Ethan Li, founder of AscendBioLabs">
+      <div class="expect-card">
+        <div class="expect-icon"><i class="ph ph-chart-line-up"></i></div>
+        <h4>Clear Next Steps</h4>
+        <p>No fluff, just a roadmap tailored to where you are, so you know exactly what to do next.</p>
       </div>
     </div>
   </section>
@@ -1362,7 +1374,7 @@
             <span>Future updates included while subscribed</span>
           </div>
         </div>
-        <a href="schedule.html" class="btn-secondary">Schedule a Call</a>
+        <a href="#book" class="btn-secondary">Schedule a Call</a>
       </div>
 
       <div class="pricing-card featured has-badge">
@@ -1395,7 +1407,7 @@
             <span>Direct feedback on suppliers, branding & launch</span>
           </div>
         </div>
-        <a href="schedule.html" class="btn-primary">Schedule a Call</a>
+        <a href="#book" class="btn-primary">Schedule a Call</a>
       </div>
 
       <div class="pricing-card has-badge">
@@ -1428,80 +1440,83 @@
             <span>Hands-on launch & scaling support to six figures</span>
           </div>
         </div>
-        <a href="schedule.html" class="btn-secondary">Schedule a Call</a>
+        <a href="#book" class="btn-secondary">Schedule a Call</a>
       </div>
     </div>
   </section>
 
-  <section class="final-cta" id="final-cta">
-    <div class="final-cta-box reveal">
-      <h2>Not Sure? <span class="accent">Talk It Through.</span></h2>
-      <p>Book a free call with Ethan Li to see if this is the right fit before you commit to anything.</p>
-      <div class="final-cta-buttons">
-        <a href="schedule.html" class="btn-primary">Schedule a Call with Ethan</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq" id="faq">
+  <section class="booking-faq" id="faq">
     <div class="faq-header reveal">
-      <h2>Frequently Asked <span class="accent">Questions</span></h2>
-      <p>Everything you need to know before getting started.</p>
+      <h2>Ask Us <span class="accent">Anything</span></h2>
+      <p>Have a question? Find quick answers below.</p>
     </div>
 
     <div class="faq-list reveal-stagger">
       <div class="faq-item">
         <button class="faq-question">
-          <span>Is this legal?</span>
+          <span>How do I book a call?</span>
           <i class="ph ph-plus"></i>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Yes. Research peptides sold for laboratory and research purposes are legal in the US. The blueprint covers exactly how AscendBioLabs structures compliance, COA documentation, and labeling to operate within those guidelines.</div>
+          <div class="faq-answer-inner">Choose a time that works for you on the calendar above, fill in your name and email, then confirm. You'll get a confirmation email with the call details right away.</div>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>Do I need experience to start?</span>
+          <span>What can I expect from the call?</span>
           <i class="ph ph-plus"></i>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">No. The blueprint is built for someone starting from zero, no supplier connections, no existing brand, and no industry background. Ethan walks through every step in the order he actually took them.</div>
+          <div class="faq-answer-inner">We'll talk through your goals and where you're starting from, and figure out together whether Blueprint Access, The Accelerator, or The Operator Track makes the most sense. No pressure, just an honest read on fit.</div>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>What's the difference between the three plans?</span>
+          <span>How long is the call?</span>
           <i class="ph ph-plus"></i>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Blueprint Access gives you the full system to implement yourself. The Accelerator adds bi-weekly group coaching with Ethan and a private community of operators for support along the way. The Operator Track is the most hands-on, direct 1:1 coaching with Ethan, supplier introductions from his personal network, and active support as you launch and scale.</div>
+          <div class="faq-answer-inner">About 30 minutes, enough time to cover your goals and questions without taking up your whole day.</div>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>What if I'm not ready to commit?</span>
+          <span>Is the call free?</span>
           <i class="ph ph-plus"></i>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Book a free call with Ethan first. He'll walk you through what's involved, answer your questions honestly, and help you figure out if this is the right move for where you're at.</div>
+          <div class="faq-answer-inner">Yes, completely free. It's a no-pressure conversation to understand what you're looking for and whether we can help.</div>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>How long until I see results?</span>
+          <span>What happens after the call?</span>
           <i class="ph ph-plus"></i>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">It took Ethan 6 months to take AscendBioLabs from zero to $2M+. Your timeline depends on how quickly you execute, but the blueprint removes the trial and error that usually adds months, or stops people before they start.</div>
+          <div class="faq-answer-inner">If it's a fit, Ethan will walk you through next steps and which plan makes sense. If it's not the right time, that's okay too, no obligation either way.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do I need to prepare anything?</span>
+          <i class="ph ph-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Just come with your goals and any questions about suppliers, compliance, or getting started. No prep required, but it helps to know roughly where you're at.</div>
         </div>
       </div>
     </div>
   </section>
+
 </div>
+
+
 
 <footer class="site-footer">
   <div class="container">
@@ -1523,28 +1538,28 @@
       <div class="footer-col">
         <h4>Navigate</h4>
         <ul>
-          <li><a href="#problem">The Problem</a></li>
-          <li><a href="#blueprint">The Blueprint</a></li>
-          <li><a href="#curriculum">Curriculum</a></li>
-          <li><a href="#about">About Ethan</a></li>
+          <li><a href="index.html#problem">The Problem</a></li>
+          <li><a href="index.html#blueprint">The Blueprint</a></li>
+          <li><a href="index.html#curriculum">Curriculum</a></li>
+          <li><a href="index.html#about">About Ethan</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Get Started</h4>
+        <h4>Get Access</h4>
         <ul>
-          <li><a href="schedule.html">Schedule a Call</a></li>
           <li><a href="#pricing">Blueprint Access</a></li>
           <li><a href="#pricing">The Operator Track</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#book">Schedule a Call</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>AscendBioLabs</h4>
         <ul>
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#blueprint">Compliance & COA</a></li>
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="index.html#blueprint">Compliance & COA</a></li>
           <li><a href="#">Research Peptides</a></li>
           <li><a href="#">Contact Support</a></li>
         </ul>
